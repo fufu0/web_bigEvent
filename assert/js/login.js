@@ -58,6 +58,7 @@ $(function() {
                 // 将登录得到的token字符串，存入本地储存
                 localStorage.setItem('token', res.token)
                 location.href = '/index.html'
+                // $('#form_login')[0].reset();
             }
         })
     })
