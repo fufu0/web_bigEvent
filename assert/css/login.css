@@ -1,0 +1,61 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  min-width: 1140px;
+  background: url(/assert/images/猫猫.png) no-repeat center;
+  background-size: cover;
+}
+.heg {
+  height: 270px !important;
+}
+.loginAndRegBox {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  height: 320px;
+  width: 400px;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  border-radius: 20px;
+}
+.loginAndRegBox .title-box {
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+}
+.loginAndRegBox .title-box h2 {
+  font-weight: 700 !important;
+  color: #158fc5;
+}
+.loginAndRegBox .login-box,
+.loginAndRegBox .login-reg {
+  padding: 0 30px;
+}
+.loginAndRegBox .login-box .layui-form-item,
+.loginAndRegBox .login-reg .layui-form-item {
+  position: relative;
+}
+.loginAndRegBox .login-box .layui-form-item .layui-icon,
+.loginAndRegBox .login-reg .layui-form-item .layui-icon {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.loginAndRegBox .login-box .layui-form-item .layui-input,
+.loginAndRegBox .login-reg .layui-form-item .layui-input {
+  padding-left: 30px;
+}
+.loginAndRegBox .login-box .layui-form-item .btn,
+.loginAndRegBox .login-reg .layui-form-item .btn {
+  background-color: #158fc5 !important;
+}
+.loginAndRegBox .login-box .layui-form-item .links,
+.loginAndRegBox .login-reg .layui-form-item .links {
+  float: right;
+}
+.loginAndRegBox .login-reg {
+  display: none;
+}
