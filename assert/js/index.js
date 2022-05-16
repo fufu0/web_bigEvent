@@ -47,13 +47,14 @@ function getUserInfo() {
 function renderAvatar(user) {
     // 渲染用户名
     let name = user.nickname || user.username;
-    
-    if ($('#welcome').css('width') <=150+'px') {
-        $('#welcome').html(`欢迎&nbsp;&nbsp;${name}`);
-    } else {
-        name = name.substring(0,4);
-        $('#welcome').html(`欢迎&nbsp;&nbsp;${name}...`);
-    }
+    $('#welcome').html(`欢迎&nbsp;&nbsp;${name}`);
+    // if ($('#welcome').css('width') <= 150 + 'px') {
+    //     $('#welcome').html(`欢迎&nbsp;&nbsp;${name}`);
+    // } else {
+    //     console.log($('#welcome').css('width'));
+    //     name = name.substring(0,4);
+    //     $('#welcome').html(`欢迎&nbsp;&nbsp;${name}...`);
+    // }
     // 渲染头像
     if (user.user_pic !== null) {
         $('.text-avatar').hide();

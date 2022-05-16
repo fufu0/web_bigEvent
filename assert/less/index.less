@@ -2,6 +2,7 @@
 .layui-side {
     // 头像
     .userinfo {
+        position: relative;
         height: 60px;
         line-height: 60px;
         // text-align: center;
@@ -9,6 +10,18 @@
         font-size: 13px;
         user-select: none;
         border-bottom: 1px solid #282b33;
+
+        .welcomed {
+            position: relative;
+            top: 4px;
+            line-height: 1;
+            display: inline-block;
+            max-width: 90px;
+            height: 13px;
+            overflow: hidden;//溢出隐藏
+            white-space: nowrap;//禁止换行
+            text-overflow: ellipsis;//...
+        }
     }
 
     // ul.layui-nav {
