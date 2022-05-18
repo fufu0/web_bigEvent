@@ -56,6 +56,13 @@ body {
 .loginAndRegBox .login-reg .layui-form-item .links {
   float: right;
 }
+.loginAndRegBox .login-box .layui-form-item .passChange,
+.loginAndRegBox .login-reg .layui-form-item .passChange {
+  position: absolute;
+  top: 7px;
+  right: 10px;
+  width: 24px;
+}
 .loginAndRegBox .login-reg {
   display: none;
 }

@@ -13,6 +13,17 @@ $(function() {
         $('.title-box h2').html('登录');
     })
 
+    let num = 1;
+    $('.passChange').on('click', function() {
+        if (num == 1) {
+            $(this).prop('src','./assert/images/open.png').siblings('.psd').prop('type', 'text');
+            num = 0;
+        } else {
+            $(this).prop('src','./assert/images/close.png').siblings('.psd').prop('type', 'password');
+            num = 1;
+        }
+    })
+
     const form = layui.form;
     const layer = layui.layer;
     form.verify({

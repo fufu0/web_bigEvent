@@ -18,6 +18,11 @@ $(function() {
 
 // console.log(localStorage.getItem('token'));
 
+function getListChange() {
+    $('.listChange').removeClass('layui-this');
+    $('.listChanged').addClass('layui-this');
+}
+
 function getUserInfo() {
     $.ajax({
         method: 'GET',

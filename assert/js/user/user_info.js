@@ -28,7 +28,6 @@ function initUserInfo() {
             if (res.status !== 0) {
                 return layui.layer.msg(res.message);
             }
-            console.log(res);
             form.val('formUserInfo', res.data);
         }
     })
@@ -43,7 +42,7 @@ function changeUserInfo() {
             if (res.status !== 0) {
                 return layui.layer.msg(res.message);
             }
-            console.log(res);
+            layui.layer.msg(res.message);
             // parent.location.reload();
             window.parent.getUserInfo();
         }
